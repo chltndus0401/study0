@@ -1,0 +1,60 @@
+/* 기본 글꼴 및 배경 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffdf6;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* 헤더 */
+header {
+    background-color: #fcefcf;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #fff2b2;
+}
+
+td img {
+    border-radius: 8px;
+}
+
+/* 링크 */
+a {
+    color: #d2691e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* iframe */
+iframe {
+    border: 2px solid #eee;
+    border-radius: 10px;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 40px;
+}
