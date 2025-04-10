@@ -5,42 +5,60 @@
     <title>커피 배우다</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+        }
+
+        tr:hover {
+            background-color: #fdf0c2;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>커피 배우다</h1>
-        <p>덕성여대 입구 쪽에 위치한 작고 아늑한 카페입니다. 커피와 케이크가 맛있어요.</p>
+        <section class="container">
+            <h1>커피 배우다</h1>
+            <p>덕성여대 입구 쪽에 위치한 작고 아늑한 카페입니다. 커피와 케이크가 맛있어요.</p>
+            <a href="https://blog.naver.com/zizonvv/223204470881" target="_blank">
+                네이버 블로그 리뷰 바로가기
+            </a> <p></p>
+            <!--대표 이미지 추가 (클릭 시 원본 보기)-->
+            <a href="media/coffeestudy.jpg" target="_blank">
+                <img src="media/coffeestudy.jpg" width="300" alt="커피 배우다 대표 이미지">
+            </a>
 
-        <table border="1">
-            <tr>
-                <th>상호 명</th>
-                <td>커피 배우다</td>
-            </tr>
-            <tr>
-                <th>대표 메뉴</th>
-                <td>커피 배우다</td>
-            </tr>
-            <tr>
-                <th>별점</th>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>대표 이미지</th>
-                <td><a href="media/coffeestudy.jpg" target="_blank"><img src="media/coffeestudy.jpg" width="150"></a></td>
-            </tr>
-        </table>
+            <!-- 상세 정보 테이블 -->
+            <h2>📋 상세 정보</h2>
+            <table border="1">
+                <tr><th>상호 명</th><td>커피 배우다</td></tr>
+                <tr><th>대표 메뉴</th><td>치킨텐더 샌드위치</td></tr>
+                <tr><th>별점</th><td>⭐⭐⭐⭐⭐</td></tr>
+            </table>
 
-        <h2>📍 위치 및 리뷰</h2>
-        <iframe src="https://naver.me/G0DAhdcS" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-        <p>출처: <a href="https://naver.me/G0DAhdcS" target="_blank">네이버 지도</a></p>
+            <!--지도 iframe으로 연결-->
+            <h2>📍 위치</h2>
+            <iframe 
+            src="https://map.naver.com/v5/entry/place/1108389770?c=15,0,0,0,dh" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>출처: <a href="https://map.naver.com/p/entry/place/1108389770" target="_blank">네이버 지도</a></p>
+        </section>
 
-        <p><a href="index.html">← 돌아가기</a></p>
+        <!--footer-->
+<footer>
+    <p><a href="index.html">← 돌아가기</a></p>
+</footer>
     </main>
 </body>
+
 </html>
