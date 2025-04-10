@@ -5,43 +5,60 @@
     <title>블랙다운</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+        }
+
+        tr:hover {
+            background-color: #fdf0c2;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>블랙다운</h1>
-        <p>딸기블랑코는 아주 진한 맛의 딸기라떼입니다. 모든 메뉴에 들어가는 크림이 맛있어요!</p>
+        <section class="container">
+            <h1>블랙다운</h1>
+            <p>딸기블랑코는 아주 진한 맛의 딸기라떼입니다. 모든 메뉴에 들어가는 크림이 맛있어요!</p>
+            <a href="https://blog.naver.com/quericco/223826391983" target="_blank">
+                네이버 블로그 리뷰 바로가기
+            </a><p></p>
 
-        <table border="1">
-            <tr>
-                <th>상호 명</th>
-                <td>블랙다운</td>
-            </tr>
-            <tr>
-                <th>대표 메뉴</th>
-                <td>딸기블랑코</td>
-            </tr>
-            <tr>
-                <th>별점</th>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>대표 이미지</th>
-                <td><a href="media/down.jpg" target="_blank"><img src="media/down.jpg" width="150"></a></td>
-            </tr>
-        </table>
+            <!--대표 이미지 추가 (클릭 시 원본 보기)-->
+            <a href="media/down.jpg" target="_blank">
+                <img src="media/down.jpg" width="300" alt="블랙다운 대표 이미지">
+            </a>
 
-        <h2>📍 위치 및 리뷰</h2>
-        <iframe src="https://naver.me/GTnAG4ar" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-        <p>출처: <a href="https://naver.me/GTnAG4ar" target="_blank">네이버 지도</a></p>
+            <!-- 상세 정보 테이블 -->
+            <h2>📋 상세 정보</h2>
+            <table border="1">
+                <tr><th>상호 명</th><td>블랙다운</td></tr>
+                <tr><th>대표 메뉴</th><td>딸기블랑코</td></tr>
+                <tr><th>별점</th><td>⭐⭐⭐⭐⭐</td></tr>
+            </table>
 
-        <p><a href="index.html">← 돌아가기</a></p>
+            <h2>📍 위치</h2>
+            <iframe 
+            src="https://map.naver.com/v5/entry/place/38667391?c=15,0,0,0,dh" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>출처: <a href="https://map.naver.com/p/entry/place/38667391?placePath=%2Fhome" target="_blank">네이버 지도</a></p>
+        </section>
+
+    <!--footer-->
+<footer>
+    <p><a href="index.html">← 돌아가기</a></p>
+</footer>
     </main>
 </body>
-</html>
 
+</html>
