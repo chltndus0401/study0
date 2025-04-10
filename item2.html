@@ -5,42 +5,64 @@
     <title>카페 말로</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+        }
+
+        tr:hover {
+            background-color: #fdf0c2;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>카페 말로</h1>
-        <p>덕성여자대학교 교내 도서관에 위치하고 있어서 방문하기 편합니다.</p>
+        <section class="container">
+            <h1>카페 말로</h1>
+            <p>덕성여자대학교 교내 도서관에 위치하고 있어서 방문하기 편합니다.</p>
+            <a href="https://blog.naver.com/shine_velyn/223221569534" target="_blank">
+                네이버 블로그 리뷰 바로가기
+            </a> <p></p>
+            <!--대표 이미지 추가 (클릭 시 원본 보기)-->
+            <a href="media/malo.jpg" target="_blank">
+                <img src="media/malo.jpg" width="300" alt="카페 말로 대표 이미지">
+            </a>
 
-        <table border="1">
-            <tr>
-                <th>상호 명</th>
-                <td>카페 말로</td>
-            </tr>
-            <tr>
-                <th>대표 메뉴</th>
-                <td>핫초코, 파니니, 매실에이드</td>
-            </tr>
-            <tr>
-                <th>별점</th>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>대표 이미지</th>
-                <td><a href="media/malo.jpg" target="_blank"><img src="media/malo.jpg" width="150"></a></td>
-            </tr>
-        </table>
+            <!--상세 정보 테이블-->
 
-        <h2>📍 위치 및 리뷰</h2>
-        <iframe src="https://naver.me/xprtKrM9" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-        <p>출처: <a href="https://naver.me/xprtKrM9" target="_blank">네이버 지도</a></p>
+            <h2>📋 상세 정보</h2>
+                <table border="1">
+                    <tr><th>상호 명</th><td>카페 말로</td></tr>
+                    <tr><th>대표 메뉴</th><td>핫초코, 파니니, 매실에이드</td></tr>
+                    <tr><th>별점</th><td>⭐⭐⭐⭐⭐</td></tr>
+                    </tr>
+                </table>
+                <!--지도 iframe으로 연결-->
+            <h2>📍 위치</h2>
+            <iframe 
+            src="https://map.naver.com/v5/entry/place/30827378?c=15,0,0,0,dh" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>출처: <a href="https://map.naver.com/p/entry/place/30827378?placePath=%2Fhome" target="_blank">네이버 지도</a></p>
+        </section>
 
-        <p><a href="index.html">← 돌아가기</a></p>
+        <!--footer-->
+<footer>
+    <p><a href="index.html">← 돌아가기</a></p>
+</footer>
     </main>
 </body>
+
 </html>
+
+
+
