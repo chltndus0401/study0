@@ -5,42 +5,60 @@
     <title>이요</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+        }
+
+        tr:hover {
+            background-color: #fdf0c2;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>이요</h1>
-        <p>마음대로 토핑을 올려 먹는 그릭 요거트와 요거트 아이스크림!</p>
+        <section class="container">
+            <h1>이요</h1>
+            <p>마음대로 토핑을 올려 먹는 그릭 요거트와 요거트 아이스크림!</p>
+            <a href="https://blog.naver.com/porori033/223600753833" target="_blank">
+                네이버 블로그 리뷰 바로가기
+            </a><p></p>
 
-        <table border="1">
-            <tr>
-                <th>상호 명</th>
-                <td>이요 (eeeyo)</td>
-            </tr>
-            <tr>
-                <th>대표 메뉴</th>
-                <td>그릭요거트</td>
-            </tr>
-            <tr>
-                <th>별점</th>
-                <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-                <th>대표 이미지</th>
-                <td><a href="media/eeeyo.jpg" target="_blank"><img src="media/eeeyo.jpg" width="150"></a></td>
-            </tr>
-        </table>
+            <!--대표 이미지 추가 (클릭 시 원본 보기)-->
+            <a href="media/eeeyo.jpg" target="_blank">
+                <img src="media/eeeyo.jpg" width="300" alt="이요 대표 이미지">
+            </a>
 
-        <h2>📍 위치 및 리뷰</h2>
-        <iframe src="https://naver.me/5uIkUChF" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
-        <p>출처: <a href="https://naver.me/5uIkUChF" target="_blank">네이버 지도</a></p>
+            <!-- 상세 정보 테이블 -->
+            <h2>📋 상세 정보</h2>
+            <table border="1">
+                <tr><th>상호 명</th><td>eeeyo(이요)</td></tr>
+                <tr><th>대표 메뉴</th><td>그릭요거트, 요거트 아이스크림</td></tr>
+                <tr><th>별점</th><td>⭐⭐⭐⭐⭐</td></tr>
+            </table>
 
-        <p><a href="index.html">← 돌아가기</a></p>
+            <h2>📍 위치</h2>
+            <iframe 
+            src="https://map.naver.com/v5/entry/place/1614266694?c=15,0,0,0,dh" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+             <p>출처: <a href="https://map.naver.com/p/entry/place/1614266694?placePath=%2Fhome" target="_blank">네이버 지도</a></p>
+        </section>
+
+        <!--footer-->
+<footer>
+    <p><a href="index.html">← 돌아가기</a></p>
+</footer>
     </main>
+
 </body>
 </html>
